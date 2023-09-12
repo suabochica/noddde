@@ -6,7 +6,8 @@ Clean Architecture Node
 TODO
 ----
 
-- [] Add domain folder to represent domain layer
+- [x] Add domain folder to represent domain layer
 - [x] Add app folder to represent app layer
-- [] Add infra folder to represent infrastructure
-- [] Add interfaces folder to represent the entry points of our app
+- [x] Add infra folder to represent infrastructure
+- [x] Add config folder to represent database and env configurations.
+- [ ] Add interfaces folder to represent the entry points of our app
