@@ -10,4 +10,4 @@ TODO
 - [x] Add app folder to represent app layer
 - [x] Add infra folder to represent infrastructure
 - [x] Add config folder to represent database and env configurations.
-- [ ] Add interfaces folder to represent the entry points of our app
+- [x] Add interfaces folder to represent the entry points of our app
