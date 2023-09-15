@@ -54,6 +54,10 @@ web_modules/
 # Optional eslint cache
 .eslintcache
 
+# Package lock
+package-lock.json
+yarn.lock
+
 # Optional stylelint cache
 .stylelintcache
 
