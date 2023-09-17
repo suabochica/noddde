@@ -1,7 +1,7 @@
 Configurations
 ==============
 
-The configuration for each environment is on the config/environments/<env>.js file, here's an example of environment file:
+The configuration for each environment is on the `config/environments/<env>.js` file, here's an example of environment file:
 
 ```json
 module.exports = {
