@@ -8,7 +8,6 @@
     "node": ">= 12",
     "npm": ">= 6"
   },
-  "pre-commit": "lint:staged",
   "scripts": {
     "start": "NODE_PATH=. node cluster.js",
     "start:cc": "codecrumbs -d src -e src/container.js",
