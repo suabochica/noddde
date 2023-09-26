@@ -81,3 +81,16 @@ Overview
   - ⛔️ `snake_case`
   - ✅ `kebab-case`
 
+CLI Tools
+---------
+
+- `yarn start` - start the noddde API boilerplate for production.
+- `yarn start:dev` - start the noddde API boilerplate locally/development.
+-`yarn start:codecrumbs` - start codecrumbs will give you quick overview the structure of the project.
+-`yarn test` - run unit tests.
+-`yarn db:reset` - run all migrations and seeds.
+-`yarn db:refresh` - run all migrations.
+-`yarn db:migrate` - apply database changes using migration script.
+-`yarn lint` - lint codebase using JavaScript Standard Style.
+-`yarn lint:fix` - fix code according JavaScript Standard Style.
+
