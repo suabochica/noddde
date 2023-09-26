@@ -68,3 +68,16 @@ To create the database, run:
 ```sh
 CREATE DATABASE node_ddd;
 ```
+
+Overview
+--------
+
+- uses Node.js > v9
+- written using ES6
+- uses JavaScript Standard Style
+- use Sequelize and his cli as ORM and data migration tool (you can change easily to different ORM and migration tool)
+- file name convention:
+  - ⛔️ `camelCase`
+  - ⛔️ `snake_case`
+  - ✅ `kebab-case`
+
