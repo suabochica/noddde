@@ -86,11 +86,43 @@ CLI Tools
 
 - `yarn start` - start the noddde API boilerplate for production.
 - `yarn start:dev` - start the noddde API boilerplate locally/development.
--`yarn start:codecrumbs` - start codecrumbs will give you quick overview the structure of the project.
--`yarn test` - run unit tests.
--`yarn db:reset` - run all migrations and seeds.
--`yarn db:refresh` - run all migrations.
--`yarn db:migrate` - apply database changes using migration script.
--`yarn lint` - lint codebase using JavaScript Standard Style.
--`yarn lint:fix` - fix code according JavaScript Standard Style.
+- `yarn start:codecrumbs` - start codecrumbs will give you quick overview the structure of the project.
+- `yarn test` - run unit tests.
+- `yarn db:reset` - run all migrations and seeds.
+- `yarn db:refresh` - run all migrations.
+- `yarn db:migrate` - apply database changes using migration script.
+- `yarn lint` - lint codebase using JavaScript Standard Style.
+- `yarn lint:fix` - fix code according JavaScript Standard Style.
 
+
+Using sequelize
+---------------
+
+Sequelize is used to define mappings between models and database tables. It will automatically add the attributes `created_at` and `updated_at` to the tables created. However for consistency for our naming we changes this to `createAt` and `updatedAt`. This will cause issue when using model so we have to add this on config:
+
+```js
+module.exports = function (sequelize, DataTypes) {
+  const User = . sequelize.define('users', {
+    ...
+  }, {
+    timestamps: false // Add this
+  })
+}
+```
+
+Below the basic command of sequelize-cli:
+
+```txt
+$ sequelize  db:migrate             Run pending migrations.
+$ sequelize  db:migrate:old_schema  Update legacy migration table
+$ sequelize  db:migrate:undo        Revert the last migration run.
+$ sequelize  db:migrate:undo:all    Revert all migrations ran.
+$ sequelize  db:seed                Run seeders.
+$ sequelize  db:seed:undo           Deletes data from the database.
+$ sequelize  db:seed:undo:all       Deletes data from the database.
+$ sequelize model:create --name modelname --attributes "text:text, url:string"  # create model
+$ sequelize seed:create     # create seeder
+```
+> if you did not install your sequelize-cli globally you can run this commands by `npx`
+
+For mor information, check the [sequelize-cli documentation](https://github.com/sequelize/cli).
