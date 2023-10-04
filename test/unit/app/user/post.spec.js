@@ -1,4 +1,5 @@
-const { describe } = require("pm2")
+const { expect } = require('chai')
+const postUseCase = require('src/app/user/post')
 
 describe('App -> User -> Post', () => {
   let useCase
