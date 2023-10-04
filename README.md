@@ -6,11 +6,15 @@ Clean Architecture Node
 TODO
 ----
 
-- [x] Add domain folder to represent domain layer
-- [x] Add app folder to represent app layer
-- [x] Add infra folder to represent infrastructure
+- [x] Add token domain folder to represent domain layer
+- [x] Add token app folder to represent app layer
+- [x] Add token infra folder to represent infrastructure
+- [x] Add jwt interfaces folder to represent the entry points of our app
+- [x] Add user domain folder to represent domain layer
+- [x] Add user app folder to represent app layer
+- [x] Add user infra folder to represent infrastructure
+- [x] Add user interfaces folder to represent the entry points of our app
 - [x] Add config folder to represent database and env configurations.
-- [x] Add interfaces folder to represent the entry points of our app
 
 Quick Start
 -----------
